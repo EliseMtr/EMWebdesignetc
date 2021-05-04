@@ -1,0 +1,268 @@
+    $variable1: #2F2F2F;
+    $variable2: #C3B79F;
+    $variable3: #88836F;
+    $variable4: #A29476;
+    $variable5: #E9E1D0;
+
+    @font-face {
+        font-family: 'futurabook';
+        src: url('fonts/futura-book-font-webfont.woff2') format('woff2'),
+             url('fonts/futura-book-font-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
+    @font-face {
+        font-family: 'futurabook_italic';
+        src: url('fonts/futura-book-italic-font-webfont.woff2') format('woff2'),
+             url('fonts/futura-book-italic-font-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+
+    @font-face {
+        font-family: 'orkneylight_italic';
+        src: url('fonts/orkney_light_italic-webfont.woff2') format('woff2'),
+             url('fonts/orkney_light_italic-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
+    
+    @font-face {
+        font-family: 'orkneylight';
+        src: url('fonts/orkney_light-webfont.woff2') format('woff2'),
+             url('fonts/orkney_light-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
+    
+    @font-face {
+        font-family: 'orkneymedium_italic';
+        src: url('fonts/orkney_medium_italic-webfont.woff2') format('woff2'),
+             url('fonts/orkney_medium_italic-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
+    
+    @font-face {
+        font-family: 'orkneyitalic';
+        src: url('fonts/orkney_regular_italic-webfont.woff2') format('woff2'),
+             url('fonts/orkney_regular_italic-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
+    
+    @font-face {
+        font-family: 'orkneybolditalic';
+        src: url('fonts/orkney-bold-italic-webfont.woff2') format('woff2'),
+             url('fonts/orkney-bold-italic-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
+    
+    @font-face {
+        font-family: 'orkneybold';
+        src: url('fonts/orkney-bold-webfont.woff2') format('woff2'),
+             url('fonts/orkney-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
+    
+    @font-face {
+        font-family: 'orkneymedium';
+        src: url('fonts/orkney-medium-webfont.woff2') format('woff2'),
+             url('fonts/orkney-medium-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
+    
+    @font-face {
+        font-family: 'orkneyregular';
+        src: url('fonts/orkney-regular-webfont.woff2') format('woff2'),
+             url('fonts/orkney-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    .emwebdesign {
+        width: 100vh;
+        height: 100vw;
+        transform: rotate(-90deg) translateX(-100vh);
+        transform-origin: top left;
+        overflow-x: hidden;
+    
+        /* pour ie et mozilla */
+        -ms-overlow-style: none;
+        scrollbar-width: none;
+            .horizontalscroll {
+                display: flex;
+                flex-direction: row;
+                width: 400vw;
+                transform: rotate(90deg) translateY(-100vh);
+                transform-origin: top left;
+                .slide {
+                    width: 100vw;
+                    height: 100vh;
+                }
+                .home {
+                    background-image: url(./images/fondsite.png);
+                    background-size: cover;
+                    background-position: center;
+                    #titrehome{
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-end;
+                        flex-direction: column;
+                        height: 70vh;
+                        width: 70%;
+                        #logo{
+                            background-image: url(./images/logo.svg);
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            margin: auto;
+                            margin-bottom: 0;
+                            margin-left: 15%;
+                            width: 40%;
+                            height: 25%;
+                            z-index: 2;
+                        }
+                        h1{
+                            font-size: 150px;
+                            color: $variable1;
+                            font-family: 'orkneybold';
+                            text-transform: uppercase;
+                            width: 80%;
+                            display: flex;
+                            justify-content: flex-end;
+                            flex-wrap: wrap;
+                            margin: auto;
+                            margin-top: 0;
+                            line-height: 0.8;
+                            opacity: 45%;
+                            z-index: 1;
+                        }
+                    }
+                    footer{
+                        display: flex;
+                        justify-content: flex-end;
+                        align-content: flex-end;
+                        flex-direction: column;
+                        #directionportfolio {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            width: 25%;
+                            height: 12.5vh;
+                            align-self: flex-end;
+                            
+                            h3{
+                                font-size: 28px;
+                                font-family: 'futurabook';
+                                color: $variable1;
+                                text-transform: uppercase;
+                                display: flex;
+                                justify-content: center;
+                                opacity: 0.7;
+                            }
+                            .fleche {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+                                height: 2.5vh;
+                                margin: auto;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                
+                                    span{
+                                        background: $variable5;
+                                        width: 20px;
+                                        height: 2px;
+                                        transform: rotate(46deg);
+                                        &:last-child {
+                                            transform: rotate(-46deg);
+                                        }   
+                                    }
+                        
+
+                            }
+                        }
+                    }
+                        .reseaux {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-self: flex-end;
+                            width: 28%;
+                            margin-top: 4%;
+                            ul {
+                            display: flex;
+                            justify-content: space-around;
+                            width: 50%;
+                                li{
+                                    list-style: none;
+                                    justify-content: flex-end;
+                                    a{
+                                        text-decoration: none;
+                                        color: $variable5;
+                                        font-size: 22px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .portfolio {
+                    background-image: url(./images/fondgauche.png);
+                    background-size: cover;
+                    background-position: center;
+                    .mainpages {
+                            display: flex;
+                            flex-direction: column;
+                            width: 40%;
+                            height: 100vh;
+                            h2 {
+                                font-family: 'orkneybold';
+                                font-size: 100px;
+                                color: $variable1;
+                                opacity: 45%;
+                                width: 60%;
+                                text-transform: uppercase;
+                            }
+                    } 
+                }
+                .about {
+                    background-image: url(./images/fondgauche.png);
+                    background-size: cover;
+                    background-position: center;
+                }
+                .contact {
+                    background-image: url(./images/fonddroite.png);
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+        }
+    ::-webkit-scrollbar {
+        display: none;
+    }

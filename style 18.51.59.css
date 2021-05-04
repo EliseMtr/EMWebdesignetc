@@ -1,0 +1,324 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'futurabook';
+  src: url("fonts/futura-book-font-webfont.woff2") format("woff2"), url("fonts/futura-book-font-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futurabook_italic';
+  src: url("fonts/futura-book-italic-font-webfont.woff2") format("woff2"), url("fonts/futura-book-italic-font-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'orkneylight_italic';
+  src: url("fonts/orkney_light_italic-webfont.woff2") format("woff2"), url("fonts/orkney_light_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'orkneylight';
+  src: url("fonts/orkney_light-webfont.woff2") format("woff2"), url("fonts/orkney_light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'orkneymedium_italic';
+  src: url("fonts/orkney_medium_italic-webfont.woff2") format("woff2"), url("fonts/orkney_medium_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'orkneyitalic';
+  src: url("fonts/orkney_regular_italic-webfont.woff2") format("woff2"), url("fonts/orkney_regular_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'orkneybolditalic';
+  src: url("fonts/orkney-bold-italic-webfont.woff2") format("woff2"), url("fonts/orkney-bold-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'orkneybold';
+  src: url("fonts/orkney-bold-webfont.woff2") format("woff2"), url("fonts/orkney-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'orkneymedium';
+  src: url("fonts/orkney-medium-webfont.woff2") format("woff2"), url("fonts/orkney-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'orkneyregular';
+  src: url("fonts/orkney-regular-webfont.woff2") format("woff2"), url("fonts/orkney-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body .emwebdesign {
+  width: 100vh;
+  height: 100vw;
+  -webkit-transform: rotate(-90deg) translateX(-100vh);
+          transform: rotate(-90deg) translateX(-100vh);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  overflow-x: hidden;
+  /* pour ie et mozilla */
+  -ms-overlow-style: none;
+  scrollbar-width: none;
+}
+
+body .emwebdesign .horizontalscroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 400vw;
+  -webkit-transform: rotate(90deg) translateY(-100vh);
+          transform: rotate(90deg) translateY(-100vh);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+body .emwebdesign .horizontalscroll .slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+body .emwebdesign .horizontalscroll .home {
+  background-image: url(./images/fondsite.png);
+  background-size: cover;
+  background-position: center;
+}
+
+body .emwebdesign .horizontalscroll .home #titrehome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 70vh;
+  width: 70%;
+}
+
+body .emwebdesign .horizontalscroll .home #titrehome #logo {
+  background-image: url(./images/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-bottom: 0;
+  margin-left: 15%;
+  width: 40%;
+  height: 25%;
+  z-index: 2;
+}
+
+body .emwebdesign .horizontalscroll .home #titrehome h1 {
+  font-size: 150px;
+  color: #2F2F2F;
+  font-family: 'orkneybold';
+  text-transform: uppercase;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  margin-top: 0;
+  line-height: 0.8;
+  opacity: 45%;
+  z-index: 1;
+}
+
+body .emwebdesign .horizontalscroll .home footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .emwebdesign .horizontalscroll .home footer #directionportfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 25%;
+  height: 12.5vh;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+body .emwebdesign .horizontalscroll .home footer #directionportfolio h3 {
+  font-size: 28px;
+  font-family: 'futurabook';
+  color: #2F2F2F;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0.7;
+}
+
+body .emwebdesign .horizontalscroll .home footer #directionportfolio .fleche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 2.5vh;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body .emwebdesign .horizontalscroll .home footer #directionportfolio .fleche span {
+  background: #E9E1D0;
+  width: 20px;
+  height: 2px;
+  -webkit-transform: rotate(46deg);
+          transform: rotate(46deg);
+}
+
+body .emwebdesign .horizontalscroll .home footer #directionportfolio .fleche span:last-child {
+  -webkit-transform: rotate(-46deg);
+          transform: rotate(-46deg);
+}
+
+body .emwebdesign .horizontalscroll .home .reseaux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 28%;
+  margin-top: 4%;
+}
+
+body .emwebdesign .horizontalscroll .home .reseaux ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+}
+
+body .emwebdesign .horizontalscroll .home .reseaux ul li {
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .emwebdesign .horizontalscroll .home .reseaux ul li a {
+  text-decoration: none;
+  color: #E9E1D0;
+  font-size: 22px;
+}
+
+body .emwebdesign .portfolio {
+  background-image: url(./images/fondgauche.png);
+  background-size: cover;
+  background-position: center;
+}
+
+body .emwebdesign .portfolio .mainpages  {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  height: 100vh;
+}
+
+body .emwebdesign .portfolio .mainpages  h2 {
+  font-family: 'orkneybold';
+  font-size: 100px;
+  color: #2F2F2F;
+  opacity: 45%;
+  width: 60%;
+  text-transform: uppercase;
+}
+
+body .emwebdesign .about {
+  background-image: url(./images/fondgauche.png);
+  background-size: cover;
+  background-position: center;
+}
+
+body .emwebdesign .contact {
+  background-image: url(./images/fonddroite.png);
+  background-size: cover;
+  background-position: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
