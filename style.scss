@@ -230,17 +230,16 @@ body {
                                 }
                             }
                         }
-                    }
                 }
                 .portfolio {
                     background-image: url(./images/fondgauche.png);
                     background-size: cover;
                     background-position: center;
                     .mainpages {
-                            display: flex;
-                            flex-direction: column;
-                            width: 40%;
-                            height: 100vh;
+                        display: flex;
+                        flex-direction: column;
+                        width: 40%;
+                        height: 100vh;
                             h2 {
                                 font-family: 'orkneybold';
                                 font-size: 100px;
@@ -266,3 +265,4 @@ body {
     ::-webkit-scrollbar {
         display: none;
     }
+}
